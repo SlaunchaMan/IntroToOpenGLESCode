@@ -13,7 +13,6 @@
 		1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79D91916BA7A0062E9CF /* InfoPlist.strings */; };
 		1F4E79DD1916BA7A0062E9CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79DC1916BA7A0062E9CF /* main.m */; };
 		1F4E79E11916BA7A0062E9CF /* DLGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */; };
-		1F4E79E31916BA7A0062E9CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79E21916BA7A0062E9CF /* Images.xcassets */; };
 		1F4E79EA1916BA7A0062E9CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79E91916BA7A0062E9CF /* XCTest.framework */; };
 		1F4E79EB1916BA7A0062E9CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79D01916BA7A0062E9CF /* Foundation.framework */; };
 		1F4E79EC1916BA7A0062E9CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79D41916BA7A0062E9CF /* UIKit.framework */; };
@@ -48,7 +47,6 @@
 		1F4E79DE1916BA7A0062E9CF /* IntroToOpenGLESCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntroToOpenGLESCode-Prefix.pch"; sourceTree = "<group>"; };
 		1F4E79DF1916BA7A0062E9CF /* DLGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLAppDelegate.h; sourceTree = "<group>"; };
 		1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGLAppDelegate.m; sourceTree = "<group>"; };
-		1F4E79E21916BA7A0062E9CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F4E79E81916BA7A0062E9CF /* IntroToOpenGLESCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroToOpenGLESCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4E79E91916BA7A0062E9CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1F4E79F11916BA7A0062E9CF /* IntroToOpenGLESCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroToOpenGLESCodeTests-Info.plist"; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				1F9CB403191731BD0003C14B /* DLGLKViewController.m */,
 				1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */,
 				1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */,
-				1F4E79E21916BA7A0062E9CF /* Images.xcassets */,
 				1F4E79D71916BA7A0062E9CF /* Supporting Files */,
 			);
 			path = IntroToOpenGLESCode;
@@ -256,7 +253,6 @@
 			files = (
 				1F9CB406191733530003C14B /* SimpleFragmentShader.fsh in Resources */,
 				1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */,
-				1F4E79E31916BA7A0062E9CF /* Images.xcassets in Resources */,
 				1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
