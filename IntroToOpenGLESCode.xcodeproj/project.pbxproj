@@ -21,6 +21,8 @@
 		1F9CB406191733530003C14B /* SimpleFragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */; };
 		1F9CB408191734D90003C14B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9CB407191734D90003C14B /* GLKit.framework */; };
 		1F9CB40A191734E10003C14B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9CB409191734E10003C14B /* OpenGLES.framework */; };
+		1F9CB40D19173EFE0003C14B /* ColorFragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB40B19173EFE0003C14B /* ColorFragmentShader.fsh */; };
+		1F9CB40E19173EFE0003C14B /* ColorVertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleFragmentShader.fsh; sourceTree = "<group>"; };
 		1F9CB407191734D90003C14B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		1F9CB409191734E10003C14B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1F9CB40B19173EFE0003C14B /* ColorFragmentShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorFragmentShader.fsh; sourceTree = "<group>"; };
+		1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorVertexShader.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		1F9CB3FC19172D510003C14B /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				1F9CB40B19173EFE0003C14B /* ColorFragmentShader.fsh */,
+				1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */,
 				1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */,
 				1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */,
 			);
@@ -184,9 +190,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9CB40D19173EFE0003C14B /* ColorFragmentShader.fsh in Resources */,
 				1F9CB406191733530003C14B /* SimpleFragmentShader.fsh in Resources */,
 				1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */,
 				1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */,
+				1F9CB40E19173EFE0003C14B /* ColorVertexShader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
