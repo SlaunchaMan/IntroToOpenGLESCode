@@ -11,10 +11,24 @@
 
 
 // Constants
+static const int kVertexCount = 3;
+static const int kCoordinatesPerVertex = 3;
+static const GLfloat coordinates[kVertexCount][kCoordinatesPerVertex] = {
+    { -0.75f, -0.85f, 0.0f },
+    {  0.75f, -0.85f, 0.0f },
+    {  0.75f,  0.65f, 0.0f },
+};
+
+static NSString * const kFragmentShaderFilename = @"SimpleFragmentShader";
+static NSString * const kVertexShaderFilename = @"SimpleVertexShader";
 static NSString * const kViewControllerTitle = @"Basic Shaders";
 
 
 @interface DLGLBasicShaderViewController ()
+
+@property GLuint shaderProgramID;
+
+- (void)compileShaders;
 
 @end
 
@@ -33,6 +47,81 @@ static NSString * const kViewControllerTitle = @"Basic Shaders";
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     [super glkView:view drawInRect:rect];
+    
+    glUseProgram(self.shaderProgramID);
+    
+    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    
+    glVertexAttribPointer(0,
+                          kVertexCount,
+                          GL_FLOAT,
+                          GL_FALSE,
+                          sizeof(GL_FLOAT) * kCoordinatesPerVertex,
+                          &coordinates);
+    
+    glDrawArrays(GL_TRIANGLES, 0, kVertexCount);
+    
+    glDisableVertexAttribArray(GLKVertexAttribPosition);
+}
+
+#pragma mark - DLGLKViewController Lifecycle
+
+- (void)setupGL
+{
+    [super setupGL];
+    
+    [self compileShaders];
+}
+
+#pragma mark - DLGLBasicShaderViewController
+
+- (void)compileShaders
+{
+    NSString *fragmentShaderPath =
+    [[NSBundle mainBundle] pathForResource:kFragmentShaderFilename
+                                    ofType:@"fsh"];
+    
+    NSString *fragmentShaderSource =
+    [[NSString alloc] initWithContentsOfFile:fragmentShaderPath
+                                    encoding:NSUTF8StringEncoding
+                                       error:NULL];
+    
+    const char *fragmentShaderSourceUTF8 = [fragmentShaderSource UTF8String];
+    
+    NSString *vertexShaderPath =
+    [[NSBundle mainBundle] pathForResource:kVertexShaderFilename
+                                    ofType:@"vsh"];
+    
+    NSString *vertexShaderSource =
+    [[NSString alloc] initWithContentsOfFile:vertexShaderPath
+                                    encoding:NSUTF8StringEncoding
+                                       error:NULL];
+    
+    const char *vertexShaderSourceUTF8 = [vertexShaderSource UTF8String];
+    
+    GLuint fragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
+    
+    GLuint vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
+    
+    glShaderSource(fragmentShaderID,
+                   1,
+                   &fragmentShaderSourceUTF8,
+                   NULL);
+    
+    glShaderSource(vertexShaderID,
+                   1,
+                   &vertexShaderSourceUTF8,
+                   NULL);
+    
+    glCompileShader(fragmentShaderID);
+    glCompileShader(vertexShaderID);
+    
+    self.shaderProgramID = glCreateProgram();
+    
+    glAttachShader(self.shaderProgramID, vertexShaderID);
+    glAttachShader(self.shaderProgramID, fragmentShaderID);
+    
+    glLinkProgram(self.shaderProgramID);
 }
 
 #pragma mark -
