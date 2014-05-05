@@ -19,6 +19,7 @@
 		1F4E79EC1916BA7A0062E9CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79D41916BA7A0062E9CF /* UIKit.framework */; };
 		1F4E79F41916BA7A0062E9CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */; };
 		1F4E79F61916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */; };
+		1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		1F4E79F11916BA7A0062E9CF /* IntroToOpenGLESCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroToOpenGLESCodeTests-Info.plist"; sourceTree = "<group>"; };
 		1F4E79F31916BA7A0062E9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroToOpenGLESCodeTests.m; sourceTree = "<group>"; };
+		1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLPrimitiveTriangleViewController.h; sourceTree = "<group>"; };
+		1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLPrimitiveTriangleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				1F4E79DF1916BA7A0062E9CF /* DLGLAppDelegate.h */,
 				1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */,
+				1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */,
+				1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */,
 				1F4E79E21916BA7A0062E9CF /* Images.xcassets */,
 				1F4E79D71916BA7A0062E9CF /* Supporting Files */,
 			);
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4E79DD1916BA7A0062E9CF /* main.m in Sources */,
+				1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */,
 				1F4E79E11916BA7A0062E9CF /* DLGLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

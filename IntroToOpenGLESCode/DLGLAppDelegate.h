@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 Detroit Labs. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
+@import UIKit;
+
 
 @interface DLGLAppDelegate : UIResponder <UIApplicationDelegate>
 
