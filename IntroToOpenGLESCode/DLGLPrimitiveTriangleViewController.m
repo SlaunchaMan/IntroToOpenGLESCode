@@ -34,6 +34,11 @@ static const GLfloat coordinates[kVertexCount][kCoordinatesPerVertex] = {
 
 #pragma mark - View Controller Lifecycle
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
