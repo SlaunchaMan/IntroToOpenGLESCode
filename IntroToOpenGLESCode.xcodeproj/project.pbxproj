@@ -13,28 +13,15 @@
 		1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79D91916BA7A0062E9CF /* InfoPlist.strings */; };
 		1F4E79DD1916BA7A0062E9CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79DC1916BA7A0062E9CF /* main.m */; };
 		1F4E79E11916BA7A0062E9CF /* DLGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */; };
-		1F4E79EA1916BA7A0062E9CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79E91916BA7A0062E9CF /* XCTest.framework */; };
-		1F4E79EB1916BA7A0062E9CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79D01916BA7A0062E9CF /* Foundation.framework */; };
-		1F4E79EC1916BA7A0062E9CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E79D41916BA7A0062E9CF /* UIKit.framework */; };
-		1F4E79F41916BA7A0062E9CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */; };
-		1F4E79F61916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */; };
 		1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */; };
 		1F9CB3FB191729400003C14B /* DLGLDemoSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB3FA191729400003C14B /* DLGLDemoSelectionTableViewController.m */; };
 		1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */; };
 		1F9CB4011917312A0003C14B /* DLGLBasicShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB4001917312A0003C14B /* DLGLBasicShaderViewController.m */; };
 		1F9CB404191731BD0003C14B /* DLGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB403191731BD0003C14B /* DLGLKViewController.m */; };
 		1F9CB406191733530003C14B /* SimpleFragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */; };
+		1F9CB408191734D90003C14B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9CB407191734D90003C14B /* GLKit.framework */; };
+		1F9CB40A191734E10003C14B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9CB409191734E10003C14B /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1F4E79ED1916BA7A0062E9CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F4E79C51916BA790062E9CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F4E79CC1916BA7A0062E9CF;
-			remoteInfo = IntroToOpenGLESCode;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1F4E79CD1916BA7A0062E9CF /* IntroToOpenGLESCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroToOpenGLESCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,11 +34,6 @@
 		1F4E79DE1916BA7A0062E9CF /* IntroToOpenGLESCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntroToOpenGLESCode-Prefix.pch"; sourceTree = "<group>"; };
 		1F4E79DF1916BA7A0062E9CF /* DLGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLAppDelegate.h; sourceTree = "<group>"; };
 		1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGLAppDelegate.m; sourceTree = "<group>"; };
-		1F4E79E81916BA7A0062E9CF /* IntroToOpenGLESCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroToOpenGLESCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F4E79E91916BA7A0062E9CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1F4E79F11916BA7A0062E9CF /* IntroToOpenGLESCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroToOpenGLESCodeTests-Info.plist"; sourceTree = "<group>"; };
-		1F4E79F31916BA7A0062E9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroToOpenGLESCodeTests.m; sourceTree = "<group>"; };
 		1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLPrimitiveTriangleViewController.h; sourceTree = "<group>"; };
 		1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLPrimitiveTriangleViewController.m; sourceTree = "<group>"; };
 		1F9CB3F9191729400003C14B /* DLGLDemoSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLDemoSelectionTableViewController.h; sourceTree = "<group>"; };
@@ -62,6 +44,8 @@
 		1F9CB402191731BD0003C14B /* DLGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLKViewController.h; sourceTree = "<group>"; };
 		1F9CB403191731BD0003C14B /* DLGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLKViewController.m; sourceTree = "<group>"; };
 		1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleFragmentShader.fsh; sourceTree = "<group>"; };
+		1F9CB407191734D90003C14B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1F9CB409191734E10003C14B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,18 +54,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4E79D31916BA7A0062E9CF /* CoreGraphics.framework in Frameworks */,
-				1F4E79D51916BA7A0062E9CF /* UIKit.framework in Frameworks */,
 				1F4E79D11916BA7A0062E9CF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F4E79E51916BA7A0062E9CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F4E79EA1916BA7A0062E9CF /* XCTest.framework in Frameworks */,
-				1F4E79EC1916BA7A0062E9CF /* UIKit.framework in Frameworks */,
-				1F4E79EB1916BA7A0062E9CF /* Foundation.framework in Frameworks */,
+				1F9CB408191734D90003C14B /* GLKit.framework in Frameworks */,
+				1F9CB40A191734E10003C14B /* OpenGLES.framework in Frameworks */,
+				1F4E79D51916BA7A0062E9CF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				1F4E79D61916BA7A0062E9CF /* IntroToOpenGLESCode */,
-				1F4E79EF1916BA7A0062E9CF /* IntroToOpenGLESCodeTests */,
 				1F4E79CF1916BA7A0062E9CF /* Frameworks */,
 				1F4E79CE1916BA7A0062E9CF /* Products */,
 			);
@@ -102,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				1F4E79CD1916BA7A0062E9CF /* IntroToOpenGLESCode.app */,
-				1F4E79E81916BA7A0062E9CF /* IntroToOpenGLESCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,10 +84,11 @@
 		1F4E79CF1916BA7A0062E9CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F4E79D01916BA7A0062E9CF /* Foundation.framework */,
 				1F4E79D21916BA7A0062E9CF /* CoreGraphics.framework */,
+				1F4E79D01916BA7A0062E9CF /* Foundation.framework */,
+				1F9CB407191734D90003C14B /* GLKit.framework */,
+				1F9CB409191734E10003C14B /* OpenGLES.framework */,
 				1F4E79D41916BA7A0062E9CF /* UIKit.framework */,
-				1F4E79E91916BA7A0062E9CF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,24 +123,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1F4E79EF1916BA7A0062E9CF /* IntroToOpenGLESCodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */,
-				1F4E79F01916BA7A0062E9CF /* Supporting Files */,
-			);
-			path = IntroToOpenGLESCodeTests;
-			sourceTree = "<group>";
-		};
-		1F4E79F01916BA7A0062E9CF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F4E79F11916BA7A0062E9CF /* IntroToOpenGLESCodeTests-Info.plist */,
-				1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		1F9CB3FC19172D510003C14B /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,24 +152,6 @@
 			productReference = 1F4E79CD1916BA7A0062E9CF /* IntroToOpenGLESCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F4E79E71916BA7A0062E9CF /* IntroToOpenGLESCodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F4E79FC1916BA7A0062E9CF /* Build configuration list for PBXNativeTarget "IntroToOpenGLESCodeTests" */;
-			buildPhases = (
-				1F4E79E41916BA7A0062E9CF /* Sources */,
-				1F4E79E51916BA7A0062E9CF /* Frameworks */,
-				1F4E79E61916BA7A0062E9CF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1F4E79EE1916BA7A0062E9CF /* PBXTargetDependency */,
-			);
-			name = IntroToOpenGLESCodeTests;
-			productName = IntroToOpenGLESCodeTests;
-			productReference = 1F4E79E81916BA7A0062E9CF /* IntroToOpenGLESCodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,11 +161,6 @@
 				CLASSPREFIX = DLGL;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Detroit Labs";
-				TargetAttributes = {
-					1F4E79E71916BA7A0062E9CF = {
-						TestTargetID = 1F4E79CC1916BA7A0062E9CF;
-					};
-				};
 			};
 			buildConfigurationList = 1F4E79C81916BA790062E9CF /* Build configuration list for PBXProject "IntroToOpenGLESCode" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -241,7 +175,6 @@
 			projectRoot = "";
 			targets = (
 				1F4E79CC1916BA7A0062E9CF /* IntroToOpenGLESCode */,
-				1F4E79E71916BA7A0062E9CF /* IntroToOpenGLESCodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,14 +187,6 @@
 				1F9CB406191733530003C14B /* SimpleFragmentShader.fsh in Resources */,
 				1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */,
 				1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F4E79E61916BA7A0062E9CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F4E79F41916BA7A0062E9CF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,37 +206,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F4E79E41916BA7A0062E9CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F4E79F61916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1F4E79EE1916BA7A0062E9CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1F4E79CC1916BA7A0062E9CF /* IntroToOpenGLESCode */;
-			targetProxy = 1F4E79ED1916BA7A0062E9CF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F4E79D91916BA7A0062E9CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1F4E79DA1916BA7A0062E9CF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F4E79F31916BA7A0062E9CF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -417,46 +318,6 @@
 			};
 			name = Release;
 		};
-		1F4E79FD1916BA7A0062E9CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntroToOpenGLESCode.app/IntroToOpenGLESCode";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IntroToOpenGLESCode/IntroToOpenGLESCode-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IntroToOpenGLESCodeTests/IntroToOpenGLESCodeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		1F4E79FE1916BA7A0062E9CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntroToOpenGLESCode.app/IntroToOpenGLESCode";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IntroToOpenGLESCode/IntroToOpenGLESCode-Prefix.pch";
-				INFOPLIST_FILE = "IntroToOpenGLESCodeTests/IntroToOpenGLESCodeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,15 +335,6 @@
 			buildConfigurations = (
 				1F4E79FA1916BA7A0062E9CF /* Debug */,
 				1F4E79FB1916BA7A0062E9CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F4E79FC1916BA7A0062E9CF /* Build configuration list for PBXNativeTarget "IntroToOpenGLESCodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F4E79FD1916BA7A0062E9CF /* Debug */,
-				1F4E79FE1916BA7A0062E9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
