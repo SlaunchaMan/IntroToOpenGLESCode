@@ -9,7 +9,7 @@
 
 #import "DLGLAppDelegate.h"
 
-#import "DLGLPrimitiveTriangleViewController.h"
+#import "DLGLDemoSelectionTableViewController.h"
 
 
 @implementation DLGLAppDelegate
@@ -21,9 +21,11 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController =
-    [[DLGLPrimitiveTriangleViewController alloc] initWithNibName:nil
-                                                          bundle:nil];
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController:
+     [[DLGLDemoSelectionTableViewController alloc] init]];
+    
+    self.window.rootViewController = navigationController;
     
     return YES;
 }

@@ -14,18 +14,16 @@
 static const int kVertexCount = 3;
 static const int kCoordinatesPerVertex = 3;
 static const GLfloat coordinates[kVertexCount][kCoordinatesPerVertex] = {
-    { -0.75f, -0.75f, 0.0f },
-    {  0.75f, -0.75f, 0.0f },
-    {  0.75f,  0.75f, 0.0f },
+    { -0.75f, -0.85f, 0.0f },
+    {  0.75f, -0.85f, 0.0f },
+    {  0.75f,  0.65f, 0.0f },
 };
+static NSString * const kViewControllerTitle = @"Primitive Triangle";
 
 
 @interface DLGLPrimitiveTriangleViewController ()
 
 @property (strong) GLKBaseEffect *effect;
-@property (strong, nonatomic) EAGLContext *renderingContext;
-
-- (void)setupGL;
 
 @end
 
@@ -34,23 +32,16 @@ static const GLfloat coordinates[kVertexCount][kCoordinatesPerVertex] = {
 
 #pragma mark - View Controller Lifecycle
 
-- (UIStatusBarStyle)preferredStatusBarStyle
+- (NSString *)title
 {
-    return UIStatusBarStyleLightContent;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self setupGL];
+    return kViewControllerTitle;
 }
 
 #pragma mark - GLKViewController Lifecycle
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    [super glkView:view drawInRect:rect];
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     
@@ -68,50 +59,21 @@ static const GLfloat coordinates[kVertexCount][kCoordinatesPerVertex] = {
     glDisableVertexAttribArray(GLKVertexAttribPosition);
 }
 
-#pragma mark - DLGLPrimitiveTriangleViewController Lifecycle
+#pragma mark - DLGKLViewController Lifecycle
 
-- (void)establishRenderingContext
+- (void)setupGL
 {
-    if ([EAGLContext currentContext] != self.renderingContext) {
-        [EAGLContext setCurrentContext:self.renderingContext];
-    }
+    [super setupGL];
     
-    [(GLKView *)self.view setContext:self.renderingContext];
+    [self initializeEffect];
 }
 
-- (void)initializeBackgroundColor
-{
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-}
+#pragma mark - DLGLPrimitiveTriangleViewController Lifecycle
 
 - (void)initializeEffect
 {
     self.effect = [[GLKBaseEffect alloc] init];
     self.effect.constantColor = GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f);
-}
-
-- (EAGLContext *)renderingContext
-{
-    if (!_renderingContext) {
-        _renderingContext =
-        [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
-        
-        if (!_renderingContext) {
-            _renderingContext =
-            [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-        }
-    }
-    
-    return _renderingContext;
-}
-
-- (void)setupGL
-{
-    [self establishRenderingContext];
-    
-    [self initializeBackgroundColor];
-    
-    [self initializeEffect];
 }
 
 #pragma mark -

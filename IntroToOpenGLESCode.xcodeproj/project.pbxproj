@@ -20,6 +20,10 @@
 		1F4E79F41916BA7A0062E9CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */; };
 		1F4E79F61916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */; };
 		1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */; };
+		1F9CB3FB191729400003C14B /* DLGLDemoSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB3FA191729400003C14B /* DLGLDemoSelectionTableViewController.m */; };
+		1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */; };
+		1F9CB4011917312A0003C14B /* DLGLBasicShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB4001917312A0003C14B /* DLGLBasicShaderViewController.m */; };
+		1F9CB404191731BD0003C14B /* DLGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB403191731BD0003C14B /* DLGLKViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		1F4E79F51916BA7A0062E9CF /* IntroToOpenGLESCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroToOpenGLESCodeTests.m; sourceTree = "<group>"; };
 		1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLPrimitiveTriangleViewController.h; sourceTree = "<group>"; };
 		1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLPrimitiveTriangleViewController.m; sourceTree = "<group>"; };
+		1F9CB3F9191729400003C14B /* DLGLDemoSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLDemoSelectionTableViewController.h; sourceTree = "<group>"; };
+		1F9CB3FA191729400003C14B /* DLGLDemoSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLDemoSelectionTableViewController.m; sourceTree = "<group>"; };
+		1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleVertexShader.vsh; sourceTree = "<group>"; };
+		1F9CB3FF1917312A0003C14B /* DLGLBasicShaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLBasicShaderViewController.h; sourceTree = "<group>"; };
+		1F9CB4001917312A0003C14B /* DLGLBasicShaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLBasicShaderViewController.m; sourceTree = "<group>"; };
+		1F9CB402191731BD0003C14B /* DLGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLKViewController.h; sourceTree = "<group>"; };
+		1F9CB403191731BD0003C14B /* DLGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLKViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +121,15 @@
 		1F4E79D61916BA7A0062E9CF /* IntroToOpenGLESCode */ = {
 			isa = PBXGroup;
 			children = (
+				1F9CB3FC19172D510003C14B /* Shaders */,
 				1F4E79DF1916BA7A0062E9CF /* DLGLAppDelegate.h */,
 				1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */,
+				1F9CB3FF1917312A0003C14B /* DLGLBasicShaderViewController.h */,
+				1F9CB4001917312A0003C14B /* DLGLBasicShaderViewController.m */,
+				1F9CB3F9191729400003C14B /* DLGLDemoSelectionTableViewController.h */,
+				1F9CB3FA191729400003C14B /* DLGLDemoSelectionTableViewController.m */,
+				1F9CB402191731BD0003C14B /* DLGLKViewController.h */,
+				1F9CB403191731BD0003C14B /* DLGLKViewController.m */,
 				1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */,
 				1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */,
 				1F4E79E21916BA7A0062E9CF /* Images.xcassets */,
@@ -147,6 +165,14 @@
 				1F4E79F21916BA7A0062E9CF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F9CB3FC19172D510003C14B /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +253,7 @@
 			files = (
 				1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */,
 				1F4E79E31916BA7A0062E9CF /* Images.xcassets in Resources */,
+				1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4E79DD1916BA7A0062E9CF /* main.m in Sources */,
+				1F9CB404191731BD0003C14B /* DLGLKViewController.m in Sources */,
 				1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */,
+				1F9CB4011917312A0003C14B /* DLGLBasicShaderViewController.m in Sources */,
+				1F9CB3FB191729400003C14B /* DLGLDemoSelectionTableViewController.m in Sources */,
 				1F4E79E11916BA7A0062E9CF /* DLGLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +476,7 @@
 				1F4E79FB1916BA7A0062E9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F4E79FC1916BA7A0062E9CF /* Build configuration list for PBXNativeTarget "IntroToOpenGLESCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +485,7 @@
 				1F4E79FE1916BA7A0062E9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
