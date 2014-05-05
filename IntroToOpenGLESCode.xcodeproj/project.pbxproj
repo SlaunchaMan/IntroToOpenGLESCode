@@ -97,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9CB3FC19172D510003C14B /* Shaders */,
+				1F4E79D71916BA7A0062E9CF /* Supporting Files */,
 				1F4E79DF1916BA7A0062E9CF /* DLGLAppDelegate.h */,
 				1F4E79E01916BA7A0062E9CF /* DLGLAppDelegate.m */,
 				1F9CB3FF1917312A0003C14B /* DLGLBasicShaderViewController.h */,
@@ -107,7 +108,6 @@
 				1F9CB403191731BD0003C14B /* DLGLKViewController.m */,
 				1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */,
 				1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */,
-				1F4E79D71916BA7A0062E9CF /* Supporting Files */,
 			);
 			path = IntroToOpenGLESCode;
 			sourceTree = "<group>";
