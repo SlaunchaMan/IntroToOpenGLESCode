@@ -73,7 +73,7 @@ static NSString * const kViewControllerTitle = @"Primitive Triangle";
 - (void)initializeEffect
 {
     self.effect = [[GLKBaseEffect alloc] init];
-    self.effect.constantColor = GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f);
+    self.effect.constantColor = GLKVector4Make(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
 #pragma mark -
