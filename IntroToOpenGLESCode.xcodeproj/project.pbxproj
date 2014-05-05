@@ -129,7 +129,7 @@
 				1F9CB405191733530003C14B /* SimpleFragmentShader.fsh */,
 				1F9CB3FD19172D6C0003C14B /* SimpleVertexShader.vsh */,
 			);
-			name = Shaders;
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
