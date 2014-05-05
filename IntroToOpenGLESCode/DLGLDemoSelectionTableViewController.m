@@ -10,6 +10,7 @@
 #import "DLGLDemoSelectionTableViewController.h"
 
 #import "DLGLBasicShaderViewController.h"
+#import "DLGLColorShaderViewController.h"
 #import "DLGLPrimitiveTriangleViewController.h"
 
 
@@ -22,7 +23,8 @@ typedef NS_ENUM(NSInteger, DLGLDemoSelectionTableViewSection) {
 typedef NS_ENUM(NSInteger, DLGLDemoSelectionTableViewDemoSectionRow) {
     DLGLDemoSelectionTableViewDemoSectionRowPrimitiveTriangle = 0,
     DLGLDemoSelectionTableViewDemoSectionRowBasicShaders      = 1,
-    DLGLDemoSelectionTableViewDemoSectionRowCount             = 2
+    DLGLDemoSelectionTableViewDemoSectionRowColorShader       = 2,
+    DLGLDemoSelectionTableViewDemoSectionRowCount             = 3
 };
 
 static NSString * const kTableViewCellReuseIdentifier = @"DemoListingCell";
@@ -66,6 +68,9 @@ static NSString * const kViewControllerTitle = @"OpenGL ES Demos";
         else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowBasicShaders) {
             title = @"Basic Shaders";
         }
+        else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowColorShader) {
+            title = @"Color Shader";
+        }
     }
     
     return title;
@@ -81,6 +86,9 @@ static NSString * const kViewControllerTitle = @"OpenGL ES Demos";
         }
         else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowBasicShaders) {
             viewControllerClass = [DLGLBasicShaderViewController class];
+        }
+        else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowColorShader) {
+            viewControllerClass = [DLGLColorShaderViewController class];
         }
     }
     
