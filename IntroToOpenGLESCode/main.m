@@ -12,7 +12,15 @@
 
 int main(int argc, char * argv[])
 {
+    int returnValue;
+    
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DLGLAppDelegate class]));
+        returnValue =
+        UIApplicationMain(argc,
+                          argv,
+                          nil,
+                          NSStringFromClass([DLGLAppDelegate class]));
     }
+
+    return returnValue;
 }
