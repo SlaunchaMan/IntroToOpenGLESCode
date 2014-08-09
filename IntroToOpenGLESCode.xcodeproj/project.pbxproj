@@ -25,6 +25,8 @@
 		1F9CB40E19173EFE0003C14B /* ColorVertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */; };
 		1F9CB41119173F4B0003C14B /* DLGLColorShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB41019173F4B0003C14B /* DLGLColorShaderViewController.m */; };
 		1F9F05221996760C00A98664 /* DLGLTeapotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F05211996760C00A98664 /* DLGLTeapotViewController.m */; };
+		1F9F0528199695F900A98664 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9F0526199695F900A98664 /* Default@2x.png */; };
+		1FD85FB01996979700666FDA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9F05291996961200A98664 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		1F9F051F199675EF00A98664 /* teapot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
 		1F9F05201996760C00A98664 /* DLGLTeapotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLTeapotViewController.h; sourceTree = "<group>"; };
 		1F9F05211996760C00A98664 /* DLGLTeapotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLTeapotViewController.m; sourceTree = "<group>"; };
+		1F9F0526199695F900A98664 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1F9F05291996961200A98664 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		1F4E79D71916BA7A0062E9CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F9F05291996961200A98664 /* Default-568h@2x.png */,
+				1F9F0526199695F900A98664 /* Default@2x.png */,
 				1F9F051F199675EF00A98664 /* teapot.h */,
 				1F4E79D81916BA7A0062E9CF /* IntroToOpenGLESCode-Info.plist */,
 				1F4E79D91916BA7A0062E9CF /* InfoPlist.strings */,
@@ -207,6 +213,8 @@
 				1F4E79DB1916BA7A0062E9CF /* InfoPlist.strings in Resources */,
 				1F9CB3FE19172D6C0003C14B /* SimpleVertexShader.vsh in Resources */,
 				1F9CB40E19173EFE0003C14B /* ColorVertexShader.vsh in Resources */,
+				1FD85FB01996979700666FDA /* Default-568h@2x.png in Resources */,
+				1F9F0528199695F900A98664 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +326,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroToOpenGLESCode/IntroToOpenGLESCode-Prefix.pch";
 				INFOPLIST_FILE = "IntroToOpenGLESCode/IntroToOpenGLESCode-Info.plist";
@@ -331,7 +338,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroToOpenGLESCode/IntroToOpenGLESCode-Prefix.pch";
 				INFOPLIST_FILE = "IntroToOpenGLESCode/IntroToOpenGLESCode-Info.plist";
