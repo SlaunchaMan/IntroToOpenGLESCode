@@ -12,6 +12,10 @@
 #import "teapot.h"
 
 
+// Constants
+static NSString * const kViewControllerTitle = @"Teacup";
+
+
 @interface DLGLTeapotViewController ()
 
 @property (strong) GLKBaseEffect *effect;
@@ -20,6 +24,13 @@
 
 
 @implementation DLGLTeapotViewController
+
+#pragma mark - View Controller Lifecycle
+
+- (NSString *)title
+{
+    return kViewControllerTitle;
+}
 
 #pragma mark - GLKViewController Lifecycle
 
@@ -47,15 +58,16 @@
     
     GLKMatrix4 modelviewMatrix = self.effect.transform.modelviewMatrix;
     
+    /*
     modelviewMatrix = GLKMatrix4Rotate(modelviewMatrix,
                                        self.timeSinceLastDraw,
                                        0.0f, 1.0f, 0.0f);
+     */
     
     self.effect.transform.projectionMatrix =
     GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65),
                               (float)view.drawableWidth / (float)view.drawableHeight,
                               0.01f, 100.0f);
-    
     
     self.effect.transform.modelviewMatrix = modelviewMatrix;
     
