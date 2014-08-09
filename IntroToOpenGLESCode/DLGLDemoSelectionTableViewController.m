@@ -12,6 +12,7 @@
 #import "DLGLBasicShaderViewController.h"
 #import "DLGLColorShaderViewController.h"
 #import "DLGLPrimitiveTriangleViewController.h"
+#import "DLGLTeapotViewController.h"
 
 
 // Table View Constants
@@ -24,7 +25,8 @@ typedef NS_ENUM(NSInteger, DLGLDemoSelectionTableViewDemoSectionRow) {
     DLGLDemoSelectionTableViewDemoSectionRowPrimitiveTriangle = 0,
     DLGLDemoSelectionTableViewDemoSectionRowBasicShaders      = 1,
     DLGLDemoSelectionTableViewDemoSectionRowColorShader       = 2,
-    DLGLDemoSelectionTableViewDemoSectionRowCount             = 3
+    DLGLDemoSelectionTableViewDemoSectionRowTeapot            = 3,
+    DLGLDemoSelectionTableViewDemoSectionRowCount             = 4
 };
 
 static NSString * const kTableViewCellReuseIdentifier = @"DemoListingCell";
@@ -71,6 +73,9 @@ static NSString * const kViewControllerTitle = @"OpenGL ES Demos";
         else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowColorShader) {
             title = @"Color Shader";
         }
+        else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowTeapot) {
+            title = @"Teapot";
+        }
     }
     
     return title;
@@ -89,6 +94,9 @@ static NSString * const kViewControllerTitle = @"OpenGL ES Demos";
         }
         else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowColorShader) {
             viewControllerClass = [DLGLColorShaderViewController class];
+        }
+        else if (indexPath.row == DLGLDemoSelectionTableViewDemoSectionRowTeapot) {
+            viewControllerClass = [DLGLTeapotViewController class];
         }
     }
     

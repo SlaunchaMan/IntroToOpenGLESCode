@@ -24,6 +24,7 @@
 		1F9CB40D19173EFE0003C14B /* ColorFragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB40B19173EFE0003C14B /* ColorFragmentShader.fsh */; };
 		1F9CB40E19173EFE0003C14B /* ColorVertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */; };
 		1F9CB41119173F4B0003C14B /* DLGLColorShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB41019173F4B0003C14B /* DLGLColorShaderViewController.m */; };
+		1F9F05221996760C00A98664 /* DLGLTeapotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F05211996760C00A98664 /* DLGLTeapotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,9 @@
 		1F9CB40C19173EFE0003C14B /* ColorVertexShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorVertexShader.vsh; sourceTree = "<group>"; };
 		1F9CB40F19173F4B0003C14B /* DLGLColorShaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLColorShaderViewController.h; sourceTree = "<group>"; };
 		1F9CB41019173F4B0003C14B /* DLGLColorShaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLColorShaderViewController.m; sourceTree = "<group>"; };
+		1F9F051F199675EF00A98664 /* teapot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
+		1F9F05201996760C00A98664 /* DLGLTeapotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGLTeapotViewController.h; sourceTree = "<group>"; };
+		1F9F05211996760C00A98664 /* DLGLTeapotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGLTeapotViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				1F9CB403191731BD0003C14B /* DLGLKViewController.m */,
 				1F4E79FF1916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.h */,
 				1F4E7A001916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m */,
+				1F9F05201996760C00A98664 /* DLGLTeapotViewController.h */,
+				1F9F05211996760C00A98664 /* DLGLTeapotViewController.m */,
 			);
 			path = IntroToOpenGLESCode;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 		1F4E79D71916BA7A0062E9CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F9F051F199675EF00A98664 /* teapot.h */,
 				1F4E79D81916BA7A0062E9CF /* IntroToOpenGLESCode-Info.plist */,
 				1F4E79D91916BA7A0062E9CF /* InfoPlist.strings */,
 				1F4E79DC1916BA7A0062E9CF /* main.m */,
@@ -214,6 +221,7 @@
 				1F9CB404191731BD0003C14B /* DLGLKViewController.m in Sources */,
 				1F4E7A011916BA9B0062E9CF /* DLGLPrimitiveTriangleViewController.m in Sources */,
 				1F9CB4011917312A0003C14B /* DLGLBasicShaderViewController.m in Sources */,
+				1F9F05221996760C00A98664 /* DLGLTeapotViewController.m in Sources */,
 				1F9CB3FB191729400003C14B /* DLGLDemoSelectionTableViewController.m in Sources */,
 				1F9CB41119173F4B0003C14B /* DLGLColorShaderViewController.m in Sources */,
 				1F4E79E11916BA7A0062E9CF /* DLGLAppDelegate.m in Sources */,
