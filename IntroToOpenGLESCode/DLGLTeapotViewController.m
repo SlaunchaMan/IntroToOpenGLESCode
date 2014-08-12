@@ -58,11 +58,11 @@ static NSString * const kViewControllerTitle = @"Teacup";
     
     GLKMatrix4 modelviewMatrix = self.effect.transform.modelviewMatrix;
     
-    /*
+    
     modelviewMatrix = GLKMatrix4Rotate(modelviewMatrix,
                                        self.timeSinceLastDraw,
                                        0.0f, 1.0f, 0.0f);
-     */
+    
     
     self.effect.transform.projectionMatrix =
     GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65),
